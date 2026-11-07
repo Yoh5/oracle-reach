@@ -1,0 +1,10 @@
+# Not redistributed, or rebuilt locally
+data/tasks.jsonl
+harnais/
+repos/
+work/
+venvs/
+certs/
+__pycache__/
+*.pyc
+.coverage

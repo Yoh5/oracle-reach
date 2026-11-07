@@ -1,0 +1,11 @@
+# Configuration imposée à la mesure, pour que chaque dépôt soit traité pareil.
+#
+# fastapi déclare `parallel = true` et `data_file = "coverage/.coverage"` dans
+# son pyproject : coverage écrivait donc des fichiers suffixés dans un
+# sous-dossier, et le lanceur, qui cherchait `.coverage` à la racine, concluait
+# « coverage n'a rien écrit » alors que seize tests venaient de passer.
+#
+# Un dépôt ne doit pas pouvoir décider où la mesure atterrit.
+[run]
+parallel = false
+branch = false
