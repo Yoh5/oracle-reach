@@ -356,7 +356,7 @@ corpus, so it can weight the reward or filter the corpus.
 
 We publish the runner, the mutation tool, the analysers, per-task results for
 all 129 tasks in both selection modes, and a method note recording every defect
-found in our own instrument.
+found in our own instrument, at https://github.com/Yoh5/oracle-reach (Apache 2.0).
 
 ```
 python src/lancer_mesure.py --taches data/tasks.jsonl --sortie data/portee.jsonl
